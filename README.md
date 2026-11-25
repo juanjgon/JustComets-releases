@@ -15,8 +15,7 @@
 <div align="center">
 
 <!-- latest-version -->
-**The first version is on its way.** Choose **Watch > Custom > Releases** at the top of this page to be told when it
-is out.
+**Latest version: 2026.11.0 (beta)**, released on 2026-11-25 &nbsp;&middot;&nbsp; **[Download it](../../releases/tag/v2026.11.0)** &nbsp;&middot;&nbsp; [What is new](RELEASE-NOTES.md) &nbsp;&middot;&nbsp; [All versions](../../releases)
 <!-- /latest-version -->
 
 </div>
