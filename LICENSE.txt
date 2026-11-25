@@ -1,0 +1,92 @@
+JustComets Freeware License
+Version 1.0, November 2026
+
+Copyright (c) 2026 Juanjo Gonzalez. All rights reserved.
+Contact: info@cieloprofundo.net
+
+This license applies to the compiled JustComets program, its installer, its documentation and the data files
+distributed with it by the author (together, the "Software"). It does not apply to the third-party components
+listed in THIRD_PARTY_NOTICES.txt; each of them is governed by its own license, and nothing in this license limits
+the rights those licenses give you. By installing, copying or using the Software you accept this license. If you do
+not accept it, do not install or use the Software.
+
+1. Grant of use
+   The author grants you a free of charge, non-exclusive, worldwide license to install and use the Software on any
+   number of computers for any lawful purpose, including personal, educational, scientific, club and professional
+   use.
+
+2. Redistribution
+   You may copy and redistribute the Software free of charge, provided that:
+   a) it is distributed unmodified and complete, as published by the author (the installer or the release package),
+      including this license, THIRD_PARTY_NOTICES.txt and the licenses folder;
+   b) no fee of any kind is charged for the Software or for access to it;
+   c) it is not bundled with other software, sold as part of another product or service, or installed together with
+      other software, without the author's prior written permission;
+   d) the Software is not presented as the work of anyone other than the author.
+
+3. Restrictions
+   Except as expressly permitted by this license, by applicable law or by the licenses of the third-party components,
+   you may not:
+   a) modify, translate or create derivative works of the Software;
+   b) decompile, disassemble or otherwise reverse engineer the JustComets program code;
+   c) remove or alter any copyright, license or attribution notice;
+   d) rent, lease, sell or sublicense the Software.
+   These restrictions do not limit the rights that article 100 of the Spanish Intellectual Property Law (Real
+   Decreto Legislativo 1/1996) and Directive 2009/24/EC give to a lawful user, such as making a back-up copy,
+   observing, studying and testing how the program works, and decompiling it to the extent needed for
+   interoperability.
+
+4. Third-party components
+   The Software uses the Qt libraries under the GNU Lesser General Public License version 3 (licenses/LGPL-3.0.txt,
+   which incorporates licenses/GPL-3.0.txt). The Qt libraries are supplied as separate library files (DLL files on
+   Windows, shared libraries in the Linux AppImage, frameworks in the macOS app). You may replace them with your
+   own modified, interface-compatible build of the same Qt version, and you may reverse engineer the
+   Software to the extent needed to debug such modifications. Where to obtain the Qt source code is stated in
+   THIRD_PARTY_NOTICES.txt. The Microsoft Visual C++ runtime installed with the Software is subject to Microsoft's
+   license terms. The table of deep-sky object positions in the folder catalogs/OpenNGC is adapted from OpenNGC and
+   is licensed under the Creative Commons Attribution-ShareAlike 4.0 International license
+   (licenses/CC-BY-SA-4.0.txt), not under this license: you may copy, change and redistribute that table under
+   that license, also separately from the Software, and sections 2 and 3 do not restrict this. The same holds for
+   the star table in catalogs/HYG, adapted from the HYG database and licensed under the same CC BY-SA 4.0 license,
+   and for the constellation tables in catalogs/Constellations, adapted from d3-celestial and licensed under the
+   BSD 3-Clause license (licenses/BSD-3-Clause-d3-celestial.txt).
+
+5. Online services and privacy
+   Some features contact third-party services (for example the Minor Planet Center, NASA/JPL, CDS VizieR and the
+   ARI Heidelberg Gaia service). Their use is subject to the terms of those providers. You are responsible for the
+   observations and reports you send, in particular any submission to the Minor Planet Center. The Software does
+   not send any information to the author.
+
+6. Ownership
+   The Software is licensed, not sold. The author keeps all rights, title and intellectual property in the Software
+   not expressly granted by this license. Product names of third parties are used only to describe compatibility and
+   belong to their owners.
+
+7. No warranty
+   TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED FREE OF CHARGE AND "AS IS", WITHOUT WARRANTY
+   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE AND NON-INFRINGEMENT. The author does not guarantee the accuracy of any ephemeris, plate
+   solution, astrometric or photometric measurement or report produced with the Software; check results before
+   publishing or submitting them.
+
+8. Limitation of liability
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+   THE SOFTWARE OR ITS USE, INCLUDING LOSS OF DATA, OBSERVING TIME OR EQUIPMENT. This limitation does not apply to
+   liability for wilful misconduct or gross negligence, to death or personal injury, or to any other liability that
+   cannot be excluded or limited under applicable law (including article 1102 of the Spanish Civil Code and
+   mandatory consumer protection rules).
+
+9. Termination
+   This license ends automatically if you breach any of its terms. You must then stop using and distributing the
+   Software and delete all copies. Sections 6 to 8 and 10 survive termination.
+
+10. Governing law and jurisdiction
+   This license is governed by the laws of Spain. Any dispute is submitted to the courts of Spain. If you are a
+   consumer, this does not deprive you of the protection of the mandatory rules of the law of your country of
+   residence, nor of your right to bring proceedings before the courts that the law grants you.
+
+11. Entire license
+   This is the complete license for the Software. If any provision is held invalid or unenforceable, it is limited
+   to the minimum extent necessary and the remaining provisions stay in effect. Any permission beyond this license
+   must be given by the author in writing.

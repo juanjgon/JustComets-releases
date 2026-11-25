@@ -1,0 +1,164 @@
+JustComets - Third-party notices
+
+JustComets includes or uses the third-party components listed below. Each is governed by its own license; the
+JustComets Freeware License (LICENSE.txt) does not change those terms.
+
+==================================================================================================================
+1. Qt 6.8.3 (Qt Core, Qt Gui, Qt Widgets, Qt Network, Qt Svg, on Linux and macOS Qt DBus, and their plugins)
+==================================================================================================================
+Copyright (C) The Qt Company Ltd. and other contributors.
+License: GNU Lesser General Public License version 3 (licenses/LGPL-3.0.txt), which incorporates the GNU General
+Public License version 3 (licenses/GPL-3.0.txt).
+
+- JustComets links to Qt dynamically. On Windows the Qt libraries are the Qt6*.dll files and the plugin folders
+  (platforms, styles, imageformats, tls, networkinformation, generic) installed beside JustComets.exe, together with
+  qt.conf. In the Linux AppImage they are the libQt6*.so files in usr/lib and the plugins in usr/plugins; in the
+  macOS app the Qt*.framework folders in JustComets.app/Contents/Frameworks and the plugins in Contents/PlugIns.
+- The Qt libraries are unmodified builds of Qt 6.8.3 from the official Qt distribution (MSVC 2022 x64 on Windows,
+  gcc_64 on Linux, the macOS build reduced to its arm64 part on macOS).
+- Corresponding source code: the shipped Qt libraries and plugins belong to the qtbase module, except Qt6Svg.dll and
+  imageformats/qsvg.dll (the SVG pictures of the help; libQt6Svg and libqsvg, QtSvg.framework on Linux and macOS),
+  which belong to the qtsvg module, and the Wayland libraries and plugins of the Linux AppImage
+  (libQt6WaylandClient, libQt6WaylandEglClientHwIntegration, platforms/libqwayland-*), which belong to the qtwayland
+  module. The complete source for this exact version is available free of charge at
+  https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtbase-everywhere-src-6.8.3.zip,
+  https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtsvg-everywhere-src-6.8.3.zip and
+  https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtwayland-everywhere-src-6.8.3.zip
+  (all Qt 6.8.3 sources: https://download.qt.io/archive/qt/6.8/6.8.3/).
+- You may replace the Qt libraries with your own modified build of Qt 6.8.3. Windows: replace the Qt DLLs with a
+  build made with a compatible MSVC x64 toolset. Linux: unpack the AppImage (./JustComets-<version>-x86_64.AppImage
+  --appimage-extract), replace the libraries in squashfs-root/usr/lib and start squashfs-root/AppRun (or make an
+  AppImage of the folder again with appimagetool). macOS: replace the frameworks in JustComets.app/Contents/Frameworks
+  and sign the app again ad hoc (codesign --force --deep --sign - JustComets.app), as the release itself is signed.
+- Qt's own translations of its standard texts (translations/qtbase_<language>.qm) are unmodified files of the Qt
+  6.8.3 qttranslations module, under the same licenses; their source is
+  https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qttranslations-everywhere-src-6.8.3.zip
+  The other files in translations/ (justcomets_<language>.qm, languages.json) are JustComets' own.
+
+Third-party code inside Qt (qtbase), under these licenses:
+  zlib (Zlib), double-conversion (BSD-3-Clause), PCRE2 and SLJIT (BSD-3-Clause / BSD-2-Clause),
+  HarfBuzz-NG (MIT), FreeType and its rasterizer (FTL), libpng (libpng-2.0), libjpeg-turbo used by the JPEG plugin
+  (IJG and BSD-3-Clause), MD4C (MIT), TinyCBOR (MIT), Pixman (MIT), Easing Equations by Robert Penner
+  (BSD-3-Clause), Unicode Character Database and CLDR (Unicode licenses), Apache Tika MIME definitions
+  (Apache-2.0), BLAKE2 / SipHash / Keccak (CC0-1.0), SHA-1, MD4 and MD5 (public domain), SHA-384/512 (BSD-3-Clause),
+  Public Suffix List (MPL-2.0) and libpsl (BSD-3-Clause), Wintab API, IAccessible2 IDL (BSD-3-Clause), D3D12
+  memory allocator and mipmap generator, Vulkan headers and allocator, OpenGL headers (MIT / Apache-2.0),
+  sRGB ICC profile, Adobe Glyph List (BSD-3-Clause), DejaVu fonts (Bitstream Vera), WebGradients (MIT); on Linux
+  and macOS also forkfd (MIT) and the D-Bus headers (AFL-2.1); on Linux the XInput code of the xcb plugin (MIT); on
+  macOS code of the Cocoa plugin and of the Core Foundation event dispatcher (BSD-3-Clause).
+Third-party code inside Qt Wayland (qtwayland, Linux): the Wayland protocol descriptions (MIT, one HPND).
+Third-party code inside Qt Svg (qtsvg): XSVG arc handling (HPND-sell-variant, Copyright 2002 USC/Information
+Sciences Institute).
+The complete copyright notices and license texts of these components are reproduced in
+licenses/Qt-third-party-notices.txt (generated from the qt_attribution.json files of the Qt 6.8.3 source).
+
+Required acknowledgements:
+- Portions of this software are copyright (C) 2024 The FreeType Project (www.freetype.org). All rights reserved.
+- This software is based in part on the work of the Independent JPEG Group.
+- This software uses libjpeg-turbo (https://libjpeg-turbo.org), copyright (C) the libjpeg-turbo Project.
+
+==================================================================================================================
+2. Microsoft Visual C++ 2015-2022 Redistributable (x64, Windows only)
+==================================================================================================================
+Copyright (C) Microsoft Corporation. Installed with Microsoft's official redistributable package under the
+Microsoft Software License Terms for that package.
+
+==================================================================================================================
+3. OpenNGC (bundled data: positions of Messier, Caldwell, NGC and IC objects)
+==================================================================================================================
+The file catalogs/OpenNGC/positions.csv installed with JustComets is adapted from OpenNGC, Copyright (c) Mattia
+Verga and the OpenNGC contributors (https://github.com/mattiaverga/OpenNGC), licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International license (licenses/CC-BY-SA-4.0.txt,
+https://creativecommons.org/licenses/by-sa/4.0/).
+
+- The adapted table is licensed under the same license, CC BY-SA 4.0, and not under the JustComets Freeware
+  License: you may copy, change and pass it on under CC BY-SA 4.0, on its own.
+- What was changed, the revision of OpenNGC it was made from, the credits OpenNGC gives for its own sources (NED,
+  HyperLEDA, SIMBAD, HEASARC, Harold Corwin's NGC/IC data) and the checksums are in catalogs/OpenNGC/NOTICE.txt.
+- OpenNGC and this table come without warranties of any kind.
+- JustComets reads the table to find an object by name. JustComets itself is a separate work; the data license
+  does not apply to the program.
+
+==================================================================================================================
+4. HYG database (bundled data: bright stars)
+==================================================================================================================
+The file catalogs/HYG/stars.csv installed with JustComets is adapted from the HYG database v4.4, Copyright (c)
+David Nash (astronexus) and contributors (https://codeberg.org/astronexus/hyg), licensed under the Creative
+Commons Attribution-ShareAlike 4.0 International license (licenses/CC-BY-SA-4.0.txt,
+https://creativecommons.org/licenses/by-sa/4.0/).
+
+- The adapted table (the stars of magnitude 6.5 and brighter, a few columns) is licensed under the same license,
+  CC BY-SA 4.0, and not under the JustComets Freeware License: you may copy, change and pass it on under
+  CC BY-SA 4.0, on its own.
+- What was changed, the sources the HYG database credits (Hipparcos, the Yale Bright Star Catalog, the Gliese
+  catalog, the IAU Working Group on Star Names) and the checksums are in catalogs/HYG/NOTICE.txt.
+- The HYG database and this table come without warranties of any kind.
+- JustComets reads the table to show bright stars. The data license does not apply to the program.
+
+==================================================================================================================
+5. d3-celestial (bundled data: constellation lines and names)
+==================================================================================================================
+The files catalogs/Constellations/lines.csv and names.csv installed with JustComets are adapted from the data
+files of d3-celestial, Copyright (c) 2015, Olaf Frohn (https://github.com/ofrohn/d3-celestial), under the BSD
+3-Clause license, whose full text and copyright notice are in licenses/BSD-3-Clause-d3-celestial.txt and in
+catalogs/Constellations/NOTICE.txt (with what was changed and the checksums). The data come without warranties
+of any kind, as that license says.
+
+==================================================================================================================
+6. Data and online services (not included; accessed at run time on request)
+==================================================================================================================
+- Gaia DR3: this work uses data from the European Space Agency (ESA) mission Gaia
+  (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC,
+  https://www.cosmos.esa.int/web/gaia/dpac/consortium). Gaia data are licensed under CC BY-SA 3.0 IGO.
+- VizieR catalogue access tool, CDS, Strasbourg, France (DOI 10.26093/cds/vizier).
+- Gaia TAP service of the Astronomisches Rechen-Institut (ARI), Zentrum fuer Astronomie, Universitaet Heidelberg.
+- Minor Planet Center (IAU MPC): orbit catalogs, ephemerides, NEOCP/PCCP pages, observations and the ADES
+  submission service.
+- JPL Horizons and Small-Body Database (SBDB) APIs, Solar System Dynamics group, Jet Propulsion Laboratory,
+  California Institute of Technology, NASA.
+- Comet weekly information by Seiichi Yoshida (www.aerith.net).
+
+==================================================================================================================
+7. Optional external programs (not included)
+==================================================================================================================
+- ASTAP, the Astrometric STAcking Program by Han Kleijn (https://www.hnsky.org/astap.htm). JustComets can run an
+  ASTAP installation chosen by the user as a fallback plate solver. ASTAP and its star databases are not part of
+  JustComets and are distributed by their author under their own terms.
+- INDI Library (https://indilib.org): the INDI server and its device drivers. JustComets has code that can
+  connect to an INDI server over the network and, on Linux and macOS, start and stop one that the user has
+  installed. INDI and its drivers are not part of JustComets, contain no JustComets code and are distributed by
+  their authors under their own terms (the INDI Library under the GNU LGPL version 2.1 or later; individual drivers
+  under their own licenses). JustComets contains no INDI code: it speaks the published INDI protocol with its own software.
+- RC Astro's stand-alone tools (https://www.rc-astro.com): the program "rc-astro" with BlurXTerminator,
+  NoiseXTerminator and StarXTerminator. The Image Processing tab can run an rc-astro installation that the user
+  has installed and licensed, as a separate program, as RC Astro's integration guide describes. The program, its
+  neural network models and its icons are not part of JustComets, are never distributed with it, and are licensed
+  to the user by RC Astro, LLC under its own license agreement. The product names are trademarks of their owner and
+  are used only to say which program is run.
+
+==================================================================================================================
+8. Libraries in the Linux AppImage (Linux only)
+==================================================================================================================
+Besides Qt, the AppImage JustComets-<version>-x86_64.AppImage carries these libraries, unmodified, in usr/lib; the
+libraries of the operating system itself are not carried, the computer's own are used:
+- ICU 73.2 (Qt's own build; Unicode license), Copyright (C) 2016 and later Unicode, Inc. and others.
+- OpenSSL 3.5.9 (HTTPS), Copyright (c) 1998-2026 The OpenSSL Project Authors, under the Apache License 2.0
+  (licenses/Apache-2.0.txt).
+- From Rocky Linux 8: libxcb and its xcb-util libraries, libXau, libXext, libxkbcommon, libwayland-cursor and
+  libwayland-egl (MIT / X11 licenses), libpng (libpng license), bzip2 (BSD-style), zstd (BSD-3-Clause).
+The AppImage starts through the AppImage runtime (AppImage/type2-runtime, commit fedfad5, MIT, Copyright (c)
+2004-23 probonopd), a program at the front of the file that is linked statically with musl libc (MIT), libfuse
+3.15.0 (GNU LGPL version 2.1, licenses/LGPL-2.1.txt), squashfuse 0.5.2 (BSD-2-Clause), zstd (BSD-3-Clause), zlib
+(Zlib) and mimalloc (MIT). The complete source of libfuse 3.15.0
+(https://github.com/libfuse/libfuse/releases/download/fuse-3.15.0/fuse-3.15.0.tar.xz) and of the runtime with its
+patch of libfuse and its build scripts (https://github.com/AppImage/type2-runtime/archive/fedfad5.tar.gz) is
+offered for download on the same page as the AppImage; a runtime rebuilt from them can be put in front of the
+AppImage's files in place of this one (appimagetool --runtime-file).
+The copyright notices and license texts of all of them are in licenses/Linux-AppImage-notices.txt.
+The macOS app carries no library besides Qt: it uses the system's own frameworks (TLS through Secure Transport).
+
+Trademarks: ASIAIR (ZWO), StellarMate (Ikarus Technologies), N.I.N.A. (Nighttime Imaging 'N' Astronomy, Stefan Berg
+and contributors), KStars and Ekos (KDE), Astrometrica (Herbert Raab),
+Houdini (Side Effects Software), CCDCommander and other product names belong to their owners and are used only to
+describe file-format compatibility or another program's method or format (Astrometrica, in the name of the FoCAs
+photometry) or, for Houdini, whose mouse and keys the network editor of Image Processing follows.
