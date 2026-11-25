@@ -5,7 +5,7 @@
 <h1 align="center">JustComets</h1>
 
 <p align="center">
-  <b>Plan the night, measure and report your comets and asteroids, and turn your frames into a picture - in one free program.</b>
+  <b>Plan the night, measure and report your comets and asteroids, and make pictures to keep and to share - in one free program.</b>
 </p>
 
 <p align="center">
@@ -25,7 +25,8 @@ is out.
 
 JustComets is a desktop program for observers of comets and asteroids. It follows a
 night from start to end: which targets are worth observing and when, where each target was and how bright it was,
-the report for the Minor Planet Center, and the finished picture. Each part is a module of its own, so you can use
+the report for the Minor Planet Center, the finished picture, and an annotated image to share with the observation and
+its details. Each part is a module of its own, so you can use
 only the ones you need beside the programs you already have.
 
 - **[The modules](#the-modules)** - what each one does, with a picture
@@ -71,6 +72,22 @@ a double click - in single frames or in stacks that follow its motion.
 - Your positions compared with those of other stations, and annotated images and animated GIFs of the night.
 
 [More about astrometry and photometry](FEATURES.md#astrometry-and-photometry)
+
+### Image Annotation
+
+A comet picture ready to share: a band under the image with the object's full name, your equipment, the exact
+observation from your MPC report and the observing geometry - and marks that point at the object and enlarged details
+of its coma.
+
+![Image Annotation: a comet marked by two lines, with the band of the observation under the picture](images/annotation-graphics.png)
+
+- The observation taken from your MPC report (from Astrometry and Photometry or any other program), the full name
+  and the distances, elongation, phase and magnitude of the night fetched online - or typed by hand.
+- Your telescope, camera and site in the band, kept as presets for each setup.
+- Marks on the object, and enlarged details in a corner, also in false color or with isophotes to show a coma's shape.
+- A JPG named from the observation (`c2099a1-20261012-950.jpg`); the picture you opened is never changed.
+
+[More about image annotation](FEATURES.md#image-annotation)
 
 ### Image Processing
 

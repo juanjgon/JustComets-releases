@@ -13,6 +13,7 @@ and a glossary.
 - [A night with JustComets](#a-night-with-justcomets)
 - [Observation Planner](#observation-planner)
 - [Astrometry and Photometry](#astrometry-and-photometry)
+- [Image Annotation](#image-annotation)
 - [Image Processing](#image-processing)
 - [The whole program](#the-whole-program)
 - [What JustComets needs](#what-justcomets-needs)
@@ -24,10 +25,11 @@ and each works on its own: use the ones you need beside the programs you already
 
 | Before the night | At the telescope | After the night |
 | --- | --- | --- |
-| **Observation Planner**: which targets, when and for how long; the plan exported for your capture program. | Your capture program (N.I.N.A., KStars/Ekos, CCDCommander, the ASIAIR) runs the plan. | **Astrometry and Photometry**: positions and magnitudes, the report to the MPC. **Image Processing**: the picture. |
+| **Observation Planner**: which targets, when and for how long; the plan exported for your capture program. | Your capture program (N.I.N.A., KStars/Ekos, CCDCommander, the ASIAIR) runs the plan. | **Astrometry and Photometry**: positions and magnitudes, the report to the MPC. **Image Processing**: the picture. **Image Annotation**: the picture with its observation, to share. |
 
 The modules hand things on through files you keep: the plan file of the planner, the FITS frames of the night, the
-reports and the pictures.
+reports and the pictures - the MPC report of Astrometry and Photometry, for example, gives Image Annotation its
+observation.
 
 ## Observation Planner
 
@@ -180,6 +182,46 @@ problem, or the way you measure a coma.
 - **Annotated images** of an observation as JPG, PNG or TIFF, and **animated GIFs** of an object's observations.
 - **Offline**: with the Gaia stars of a field kept, or with catalog files, plate solving and measuring need no internet.
 
+## Image Annotation
+
+A picture of a comet or an asteroid made ready to share: a band under the image with the object's name, your
+equipment, the exact observation from your MPC report and the observing geometry, marks that point at the object, and
+enlarged details. The picture you open is never changed; the result is a new JPG.
+
+![Image Annotation: the settings on the left, and on the right the picture as it will be exported, with its band](images/annotation-window.png)
+
+### Annotating a picture
+
+1. **Open image...**: a JPG, PNG or BMP picture of the object.
+2. **The observation**: choose your MPC report - from Astrometry and Photometry or from another program - and one of
+   its observations. It gives the band its line of astrometry, the designation, the date and the observatory, which
+   also name the exported file (`c2099a1-20261012-950.jpg`).
+3. **The name and the geometry**: the full name of the object is looked up online, and the distances from the Earth
+   and the Sun, the elongation, the phase and the model magnitude at the time of the observation are fetched from the
+   MPC or JPL Horizons. Both can be typed by hand instead, and what you type is never overwritten.
+4. **The exposures**, a heading and any text of your own.
+5. **Your equipment**: three lines - telescope and camera; orientation, scale and binning; observer, place and
+   observatory - kept as a **preset** for each setup, or taken from the report's header.
+6. **The look** of the band, the marks and the details, then **Export JPG...**.
+
+![The Astrometry tab: the MPC report and its observations, one chosen for the band](images/annotation-astrometry.png)
+
+### Marks, details and the band
+
+- **Object marks**: click the object, and lines point at it - horizontal, vertical or a cross - leaving a gap around
+  it, with a text if you want one.
+- **Detail windows**: drag over a detail, and it appears enlarged in a corner of the picture with its own zoom - also
+  in **false color** or with **isophotes**, the contours of equal brightness that show the shape of a coma.
+- **Image adjustments**: brightness, contrast, saturation and color balance of the picture itself, without touching
+  the band, the marks or the details.
+- **The band**: its fonts, colors, widths, margins and height, and which of its parts are shown. A line too long for
+  the band is never cut silently: the export asks first.
+
+![The Equipment tab: the three lines of the band, kept as a preset](images/annotation-equipment.png)
+
+**Sessions** keep everything of an annotation - the paths, the object, the observation, the geometry and every
+setting - and open again without the internet; the fields remember the values you used last.
+
 ## Image Processing
 
 From the frames of a night to a finished picture, as a **network of nodes**: each step is a node, the nodes are linked
@@ -259,8 +301,8 @@ minutes on an 8-core PC. The threads, the memory and the size of the cache are y
 ## The whole program
 
 - **Help in the program**, in every language of the program: a user's manual, a reference of every control and every
-  node, tutorials (planning a night, comet astrometry to the MPC, Image Processing basics, a deep-sky picture, LRGB and
-  narrowband) and a glossary. **F1** or the **?** of a window opens the entry of what is under the mouse.
+  node, tutorials (comet astrometry to the MPC, an annotated comet image, Image Processing basics, a deep-sky picture,
+  LRGB and narrowband) and a glossary. **F1** or the **?** of a window opens the entry of what is under the mouse.
 - **Languages**: English and Spanish.
 - **Looks**: dark, light, or the one of your system.
 
