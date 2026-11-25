@@ -38,6 +38,20 @@ only the ones you need beside the programs you already have.
 > reference - is in **English** and **Spanish** (*espa&ntilde;ol*). It follows the language of your system at first,
 > and **Settings** changes it. These pages are in English.
 
+> [!WARNING]
+> **JustComets is in an early beta.** It is complete enough to be used and tried, but it has not yet been proven over
+> many nights by many observers, and it can still make mistakes. Please check its results:
+>
+> - **Night plans.** A plan exported for N.I.N.A., KStars/Ekos, CCDCommander or the ASIAIR moves your mount by itself.
+>   Look at every plan in the program that runs it, and run it at first with you beside the telescope, ready to stop
+>   it, before you leave a night unattended. The planner plans within the limits you give it; it does not protect your
+>   mount, so check its limits yourself.
+> - **Astrometry and photometry.** Check every position and magnitude before you send a report to the Minor Planet
+>   Center - the fit of each measurement, its O-C against the prediction, the frames themselves - and send to the
+>   MPC's test service first. A report sent to the MPC's production service is published.
+>
+> You use JustComets at your own risk (see the [license](LICENSE.txt)).
+
 ## The modules
 
 ### Observation Planner
@@ -150,8 +164,8 @@ delete them.
 macOS refuses to open it the first time: open **System Settings > Privacy & Security** and choose **Open Anyway**
 (once).
 
-> JustComets is in **beta**: it is complete enough to be used, and your reports of what does not work help it most
-> ([below](#questions-and-bug-reports)).
+> JustComets is in an **early beta** (see the warning at the top of this page): check its plans and its measurements
+> before you rely on them. Your reports of what does not work help it most ([below](#questions-and-bug-reports)).
 
 ## Other programs it can use
 
