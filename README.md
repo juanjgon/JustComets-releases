@@ -131,9 +131,20 @@ Every version is on the [releases page](../../releases), with these files:
 SmartScreen may show "Windows protected your PC": choose **More info**, then **Run anyway**. Uninstalling never
 removes your observations, and keeps your settings unless you ask for them to be removed.
 
-**Linux.** Make the file executable and start it: `chmod +x JustComets-<version>-x86_64.AppImage`, then
-`./JustComets-<version>-x86_64.AppImage`. Nothing is installed; at its first start it offers an entry in the
-applications menu.
+**Linux.** The AppImage is the whole program in one file: nothing is installed in the system.
+
+1. Put the file where you keep programs, for example a folder `Applications` in your home folder.
+2. Allow it to run: in the file manager, **Properties > Allow executing file as program**, or in a terminal
+   `chmod +x JustComets-<version>-x86_64.AppImage`.
+3. Start it with a double click, or with `./JustComets-<version>-x86_64.AppImage`. At its first start it asks
+   whether to add itself, with its icon, to the applications menu; its **Settings** window adds or removes the entry
+   later.
+
+If it does not start and says that FUSE is missing (some recent systems no longer install it by themselves), install
+your system's FUSE package, or start it with `--appimage-extract-and-run`. To update, put the new AppImage in place of
+the old one and start it once: the menu entry follows it. To remove JustComets, remove the menu entry in **Settings**
+and delete the file; your settings (`~/.config/JustComets`) and data (`~/.local/share/JustComets`) stay until you
+delete them.
 
 **macOS.** Open the disk image and drag **JustComets** to **Applications**. The app is not notarized by Apple, so
 macOS refuses to open it the first time: open **System Settings > Privacy & Security** and choose **Open Anyway**
