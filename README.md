@@ -15,7 +15,13 @@
 <div align="center">
 
 <!-- latest-version -->
-**Latest version: 2026.11.0 (beta)**, released on 2026-11-25 &nbsp;&middot;&nbsp; **[Download it](../../releases/tag/v2026.11.0)** &nbsp;&middot;&nbsp; [What is new](RELEASE-NOTES.md) &nbsp;&middot;&nbsp; [All versions](../../releases)
+### Download JustComets 2026.11.0 (beta)
+
+**[Download for Windows](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-setup-x64.exe)** - Windows 10 and 11, 64-bit, 51 MB<br>
+**[Download for Linux](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-x86_64.AppImage)** - 64-bit PC, AppImage, 58 MB<br>
+**[Download for macOS](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-arm64.dmg)** - macOS 14 or later, Apple silicon, 42 MB
+
+Released on 2026-11-25 &nbsp;&middot;&nbsp; [How to install](#download-and-install) &nbsp;&middot;&nbsp; [What is new](RELEASE-NOTES.md) &nbsp;&middot;&nbsp; [All versions and checksums](../../releases)
 <!-- /latest-version -->
 
 </div>
@@ -129,15 +135,18 @@ the network keeps the recipe, not only the result, and no file you read is ever 
 
 ## Download and install
 
-Every version is on the [releases page](../../releases), with these files:
+<!-- latest-files -->
+The files of the latest version, **2026.11.0 (beta)** - a click on a file downloads it. Every version, with its
+checksums, is on the [releases page](../../releases).
 
-| System | File |
-| --- | --- |
-| Windows 10 and 11, 64-bit | `JustComets-<version>-setup-x64.exe` |
-| Linux, 64-bit PC (glibc 2.28 or newer, such as RHEL / Rocky 8, Debian 10, Ubuntu 20.04 and later) | `JustComets-<version>-x86_64.AppImage` |
-| macOS 14 Sonoma or later, Apple silicon | `JustComets-<version>-arm64.dmg` |
+| System | File | Size |
+| --- | --- | --- |
+| Windows 10 and 11, 64-bit | [`JustComets-2026.11.0-setup-x64.exe`](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-setup-x64.exe) | 51 MB |
+| Linux, 64-bit PC (glibc 2.28 or newer, such as RHEL / Rocky 8, Debian 10, Ubuntu 20.04 and later) | [`JustComets-2026.11.0-x86_64.AppImage`](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-x86_64.AppImage) | 58 MB |
+| macOS 14 Sonoma or later, Apple silicon | [`JustComets-2026.11.0-arm64.dmg`](https://github.com/juanjgon/JustComets-releases/releases/download/v2026.11.0/JustComets-2026.11.0-arm64.dmg) | 42 MB |
+<!-- /latest-files -->
 
-`SHA256SUMS.txt` on the same page has the SHA-256 checksum of every file. Please compare it with your download:
+`SHA256SUMS.txt` on the releases page has the SHA-256 checksum of every file. Please compare it with your download:
 `Get-FileHash <file>` in Windows PowerShell, `sha256sum <file>` on Linux, `shasum -a 256 <file>` on macOS.
 
 **Windows.** Run the setup. It can install for all users or for you only. The setup is not signed yet, so Windows
